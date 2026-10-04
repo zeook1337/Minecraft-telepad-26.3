@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "Эндер бисер",
+  "message.telepads.portable_disabled": "Эта функциональность отключена оператором сервера.",
+  "message.telepads.destination_disabled": "Этот Телепад был выключен",
+  "message.telepads.dragon_blocked": "Сила Дракона Края заклинила ваш Телепад!",
+  "screen.telepads.forget": "Забыть",
+  "message.telepads.insufficient_xp": "У вас слишком мало опыта, чтобы оплатить телепорт.",
+  "item.telepads.ender_bead_necklace": "Ожерелье из эндербисера",
+  "block.telepads.telepad": "Телепад",
+  "screen.telepads.confirm_missing": "Телепортироваться в любом случае",
+  "message.telepads.no_portable_destination": "Осколки пёрла... рядом нет Телепада",
+  "item.telepads.creative_rod": "Местонахождение Циклер",
+  "screen.telepads.name": "Имя твоего Телепада ",
+  "item.telepads.transmitter": "Передатчик",
+  "item.telepads.toggler": "Переключатель",
+  "item.telepads.creative_rod_public": "Public-O-Matic"
+}

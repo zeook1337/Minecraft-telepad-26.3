@@ -1,0 +1,33 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "telepads:block/telepad"
+      }
+    },
+    {
+      "when": {
+        "transmitter": "true"
+      },
+      "apply": {
+        "model": "telepads:block/transmitter"
+      }
+    },
+    {
+      "when": {
+        "toggler": "true"
+      },
+      "apply": {
+        "model": "telepads:block/toggler"
+      }
+    },
+    {
+      "when": {
+        "disabled": "true"
+      },
+      "apply": {
+        "model": "telepads:block/disabled"
+      }
+    }
+  ]
+}

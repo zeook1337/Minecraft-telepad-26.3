@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[66,67)"
+license="GPL-3.0-only"
+logoFile="logo.png"
+
+[[mods]]
+modId="telepads"
+version="26.3-7.1.0-dev"
+displayName="Telepads (26.3 adaptation)"
+authors="Subaraki; Telepads adaptation contributors"
+credits="Original mod by Subaraki. Commoble (debugging), StrickerRocker (bug testing), Darkhax (2014 assistance). See META-INF/NOTICE.md."
+displayTest="MATCH_VERSION"
+description='''Independent adaptation of Telepads for Minecraft Java 26.3.
+Development build. See the included license and credits. Legacy worlds and data are not imported automatically.'''
+
+[[dependencies.telepads]]
+modId="forge"
+mandatory=true
+versionRange="[66.0.9,67)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.telepads]]
+modId="minecraft"
+mandatory=true
+versionRange="[26.3,26.4)"
+ordering="NONE"
+side="BOTH"

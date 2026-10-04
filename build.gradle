@@ -1,0 +1,112 @@
+// This is a minimal setup of a Forge mod workspace.
+// For complex examples (including AccessTransformers, Jar-in-Jar, and Mixin), see our examples repository.
+// https://github.com/MinecraftForge/MDKExamples
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'eclipse'
+    id 'net.minecraftforge.gradle' version '7.0.17'
+}
+
+version = '26.3-7.1.0-dev'
+group = 'subaraki.telepads'
+
+base { archivesName = 'telepads' }
+
+// Mojang ships Java 25 to end users in 26.1+, so your mod should target Java 25.
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+// Include generated resources
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+if (providers.gradleProperty('telepadsGameTests').isPresent()) {
+    sourceSets.main.java.srcDir 'src/gametest/java'
+    sourceSets.main.resources.srcDir 'src/gametest/resources'
+}
+
+minecraft {
+    runs {
+        configureEach {
+            workingDir = layout.projectDirectory.dir("run/${name}")
+
+            systemProperty 'eventbus.api.strictRuntimeChecks', 'true'
+            systemProperty 'forge.enabledGameTestNamespaces', 'telepads'
+        }
+
+        register('client') {
+            if (providers.gradleProperty('telepadsColorAcceptance').isPresent()) {
+                systemProperty 'telepads.colorAcceptance', 'true'
+                systemProperty 'telepads.colorReject', providers.gradleProperty('telepadsColorReject').isPresent().toString()
+                systemProperty 'telepads.colorEvidence', layout.projectDirectory.dir('docs/evidence/dye-colors').asFile.absolutePath
+                args '--username', providers.gradleProperty('telepadsUser').getOrElse('TelepadAlice'), '--width', '1280', '--height', '720'
+                workingDir = layout.projectDirectory.dir('run/colors-' + providers.gradleProperty('telepadsUser').getOrElse('TelepadAlice'))
+                maxHeapSize = '1G'
+            }
+            if (providers.gradleProperty('telepadsClientSmoke').isPresent()) {
+                systemProperty 'telepads.clientSmoke', 'true'
+                args '--username', 'TelepadSmoke', '--width', '1280', '--height', '720'
+            }
+            if (providers.gradleProperty('telepadsIntegration').isPresent()) {
+                systemProperty 'telepads.integration', 'true'
+                systemProperty 'telepads.integrationRestart', providers.gradleProperty('telepadsIntegrationRestart').isPresent().toString()
+                args '--username', providers.gradleProperty('telepadsUser').getOrElse('TelepadAlice'), '--width', '1280', '--height', '720'
+                workingDir = layout.projectDirectory.dir('run/' + providers.gradleProperty('telepadsUser').getOrElse('TelepadAlice'))
+                maxHeapSize = '1G'
+            }
+        }
+
+        register('server') {
+            args '--nogui'
+        }
+
+        register('gameTestServer') {
+            args '--tests', 'telepads:*', '--report', 'report.xml'
+        }
+
+        register('data') {
+            workingDir = layout.projectDirectory.dir('run-data')
+
+            args '--mod', 'telepads', '--all', '--output', layout.projectDirectory.dir('src/generated/resources'), '--existing', layout.projectDirectory.dir('src/main/resources')
+        }
+    }
+}
+
+// Used only for packaged-JAR acceptance runs. Skip compilation/resource tasks with -x.
+if (providers.gradleProperty('telepadsPackagedJar').isPresent()) {
+    sourceSets.main.output.classesDirs.setFrom(files(providers.gradleProperty('telepadsPackagedJar').get()))
+    sourceSets.main.output.resourcesDir = null
+}
+
+repositories {
+    minecraft.mavenizer(it) // In Kotlin, it = this
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+    mavenCentral()
+}
+
+dependencies {
+    implementation minecraft.dependency('net.minecraftforge:forge:26.3-66.0.9')
+    annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.6'
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+tasks.named('jar') {
+    from(files('LICENSE.md', 'NOTICE.md', 'FORGE-LICENSE.txt')) { into 'META-INF' }
+    manifest {
+        attributes('Implementation-Title': 'Telepads 26.3 adaptation',
+                   'Implementation-Version': project.version,
+                   'Implementation-Vendor': 'Telepads contributors; original mod by Subaraki')
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    // Use the UTF-8 charset for Java compilation
+    // This is done by default in Java 18+, but this ensures it no matter the Java or Gradle version
+    options.encoding = 'UTF-8'
+}

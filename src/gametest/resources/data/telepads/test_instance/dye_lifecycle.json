@@ -1,0 +1,7 @@
+{
+  "structure": "forge:empty3x3x3",
+  "type": "minecraft:function",
+  "max_ticks": 200,
+  "environment": "minecraft:default",
+  "function": "telepads:dye_lifecycle"
+}

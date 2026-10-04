@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "Enderperle",
+  "message.telepads.portable_disabled": "Diese Funktionalität wurde vom Serveroperator deaktiviert.",
+  "message.telepads.destination_disabled": "Dieses Telepad wurde abgeschaltet",
+  "message.telepads.dragon_blocked": "Die Kraft des Enderdrachens blockiert dein Telepad !",
+  "screen.telepads.forget": "Vergiss",
+  "message.telepads.insufficient_xp": "Deine Erfahrung ist zu niedrig um die Teleportkosten zu decken",
+  "item.telepads.ender_bead_necklace": "Enderperlenkette",
+  "block.telepads.telepad": "Telepad",
+  "screen.telepads.confirm_missing": "Teleportiere trotzdem",
+  "message.telepads.no_portable_destination": "Die Perle hüpft... keine Telepads in der Nähe gefunden",
+  "item.telepads.creative_rod": "Positionswechsler",
+  "screen.telepads.name": "Benenne dein Telepad ",
+  "item.telepads.transmitter": "Sendegerät",
+  "item.telepads.toggler": "Umschalter",
+  "item.telepads.creative_rod_public": "Publikomat"
+}

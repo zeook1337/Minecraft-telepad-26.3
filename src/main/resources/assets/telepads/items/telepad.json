@@ -1,0 +1,16 @@
+{
+  "model": {
+    "tints": [
+      {
+        "part": 0,
+        "type": "telepads:colors"
+      },
+      {
+        "part": 1,
+        "type": "telepads:colors"
+      }
+    ],
+    "model": "telepads:block/telepad",
+    "type": "minecraft:model"
+  }
+}

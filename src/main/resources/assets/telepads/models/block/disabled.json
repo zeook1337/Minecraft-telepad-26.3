@@ -1,0 +1,40 @@
+{
+  "elements": [
+    {
+      "from": [
+        3,
+        2.1,
+        7
+      ],
+      "faces": {
+        "east": {
+          "texture": "#all"
+        },
+        "north": {
+          "texture": "#all"
+        },
+        "down": {
+          "texture": "#all"
+        },
+        "west": {
+          "texture": "#all"
+        },
+        "up": {
+          "texture": "#all"
+        },
+        "south": {
+          "texture": "#all"
+        }
+      },
+      "to": [
+        13,
+        2.5,
+        9
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "#all",
+    "all": "minecraft:block/red_concrete"
+  }
+}
