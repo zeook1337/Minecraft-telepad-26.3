@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "Petite Perle de l'End",
+  "message.telepads.portable_disabled": "Cette fonctionalité a été désactivé par l'opeateur du serveur.",
+  "message.telepads.destination_disabled": "Ce Télépad a été désactivé.",
+  "message.telepads.dragon_blocked": "Les Pouvoirs du Dragon bloquent les signaux du Télépad !",
+  "screen.telepads.forget": "Oublier",
+  "message.telepads.insufficient_xp": "Vous n'avez pas assez de niveau pour utiliser ce Télépad",
+  "item.telepads.ender_bead_necklace": "Collier de Perle de L'End",
+  "block.telepads.telepad": "Télépad",
+  "screen.telepads.confirm_missing": "Téléporter quand même",
+  "message.telepads.no_portable_destination": "La perle rebondit... aucun Télépad n'as été trouvé.",
+  "item.telepads.creative_rod": "Cycle-O-Lieu",
+  "screen.telepads.name": "Nommez votre Télépad ",
+  "item.telepads.transmitter": "Transmitteur",
+  "item.telepads.toggler": "Toggleur",
+  "item.telepads.creative_rod_public": "Publiq-O-Matiq"
+}

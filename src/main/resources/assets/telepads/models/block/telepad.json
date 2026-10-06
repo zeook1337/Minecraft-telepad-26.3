@@ -1,0 +1,251 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "#base",
+    "frame": "telepads:block/telepad_frame",
+    "base": "telepads:block/telepad_base",
+    "top": "telepads:block/telepad_top",
+    "bottom": "telepads:block/telepad_bottom"
+  },
+  "elements": [
+    {
+      "to": [
+        16,
+        2,
+        2
+      ],
+      "faces": {
+        "up": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#bottom"
+        },
+        "north": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#frame",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "to": [
+        16,
+        2,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#bottom"
+        },
+        "north": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#frame",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "to": [
+        2,
+        2,
+        14
+      ],
+      "faces": {
+        "up": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#bottom"
+        },
+        "north": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#frame",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "to": [
+        16,
+        2,
+        14
+      ],
+      "faces": {
+        "up": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "down": {
+          "texture": "#bottom"
+        },
+        "north": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "east": {
+          "texture": "#frame",
+          "tintindex": 0
+        },
+        "west": {
+          "texture": "#frame",
+          "tintindex": 0
+        }
+      },
+      "from": [
+        14,
+        0,
+        2
+      ]
+    },
+    {
+      "to": [
+        14,
+        1.5,
+        14
+      ],
+      "faces": {
+        "up": {
+          "texture": "#base",
+          "tintindex": 1
+        },
+        "down": {
+          "texture": "#bottom"
+        },
+        "north": {
+          "texture": "#base",
+          "tintindex": 1
+        },
+        "south": {
+          "texture": "#base",
+          "tintindex": 1
+        },
+        "east": {
+          "texture": "#base",
+          "tintindex": 1
+        },
+        "west": {
+          "texture": "#base",
+          "tintindex": 1
+        }
+      },
+      "from": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "to": [
+        13,
+        1.51,
+        13
+      ],
+      "faces": {
+        "up": {
+          "texture": "#top",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "from": [
+        3,
+        1.51,
+        3
+      ]
+    }
+  ],
+  "display": {
+    "gui": {
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        30,
+        225,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    }
+  }
+}

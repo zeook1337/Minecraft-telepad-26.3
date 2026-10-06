@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "எண்டர் பீட்",
+  "message.telepads.portable_disabled": "இந்தச் செயல்பாடு சர்வர் ஆபரேட்டரால் முடக்கப்பட்டுள்ளது.",
+  "message.telepads.destination_disabled": "இந்த டெலிபேட் அணைக்கப்பட்டது",
+  "message.telepads.dragon_blocked": "எண்டர் டிராகனின் சக்தி உங்கள் டெலிபேடை முடக்குகிறது!",
+  "screen.telepads.forget": "மறந்துவிடு",
+  "message.telepads.insufficient_xp": "டெலிபோர்ட் அபராதம் செலுத்த உங்கள் அனுபவம் மிகவும் குறைவாக உள்ளது",
+  "item.telepads.ender_bead_necklace": "எண்டர் பீட் நெக்லஸ்",
+  "block.telepads.telepad": "டெலிபேட்",
+  "screen.telepads.confirm_missing": "டெலிபோர்ட் எப்படியும் செய்",
+  "message.telepads.no_portable_destination": "அருகில் டெலிபேடுகள் எதுவும் இல்லை",
+  "item.telepads.creative_rod": "இருப்பிடம் சைக்கிள் சாதனம்",
+  "screen.telepads.name": "உங்கள் டெலிபேடுக்கு பெயரிடவும் ",
+  "item.telepads.transmitter": "கடத்தும் கருவி",
+  "item.telepads.toggler": "டோக்லர்",
+  "item.telepads.creative_rod_public": "Public-O-Matic"
+}

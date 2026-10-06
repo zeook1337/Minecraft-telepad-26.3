@@ -1,0 +1,23 @@
+{
+  "source": "telepad-in-game.png",
+  "sourceDimensions": [
+    1920,
+    1080
+  ],
+  "originalFileSha256": "1e72eb5455a0dd5130f2bba536d7926f820ca01e5583558f9892ec4a677bf380",
+  "cropBox": [
+    744,
+    335,
+    1184,
+    775
+  ],
+  "cropCoordinates": "left, top, right, bottom; pixels in the source image",
+  "output": "curseforge-logo.png",
+  "outputDimensions": [
+    400,
+    400
+  ],
+  "resampling": "Lanczos",
+  "processing": "Crop and resize only; PNG metadata omitted; no AI generation or retouching.",
+  "modLogo": "../../src/main/resources/logo.png"
+}

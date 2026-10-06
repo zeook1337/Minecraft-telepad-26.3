@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "subaraki",
+  "ingredients": [
+    "telepads:ender_bead",
+    "telepads:ender_bead",
+    "minecraft:string",
+    "minecraft:string",
+    "minecraft:string"
+  ],
+  "result": {
+    "id": "telepads:ender_bead_necklace",
+    "count": 1
+  }
+}

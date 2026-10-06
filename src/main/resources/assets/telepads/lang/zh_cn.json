@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "末影念珠",
+  "message.telepads.portable_disabled": "This Functionality has been disabled by the server operator.",
+  "message.telepads.destination_disabled": "这个传送台已关闭",
+  "message.telepads.dragon_blocked": "末影龙正在干扰你进行传送！",
+  "screen.telepads.forget": "移除传送点",
+  "message.telepads.insufficient_xp": "抱歉，你没有足够的经验以消耗进行传送。",
+  "item.telepads.ender_bead_necklace": "末影念珠项链",
+  "block.telepads.telepad": "传送台",
+  "screen.telepads.confirm_missing": "强制传送",
+  "message.telepads.no_portable_destination": "The Pearl Bounces... no telepads are found nearby",
+  "item.telepads.creative_rod": "单向传送带台手杖(创造)",
+  "screen.telepads.name": "传送台名称",
+  "item.telepads.transmitter": "跨世界传送(升级)",
+  "item.telepads.toggler": "红石控制器(升级)",
+  "item.telepads.creative_rod_public": "公共传送台手杖(创造)"
+}

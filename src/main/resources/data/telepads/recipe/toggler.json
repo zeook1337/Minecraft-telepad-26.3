@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "subaraki",
+  "pattern": [
+    "RBR",
+    "DDD"
+  ],
+  "key": {
+    "D": "minecraft:redstone",
+    "R": "minecraft:repeater",
+    "B": "minecraft:redstone_block"
+  },
+  "result": {
+    "id": "telepads:toggler",
+    "count": 1
+  }
+}

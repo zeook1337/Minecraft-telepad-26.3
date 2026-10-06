@@ -1,0 +1,17 @@
+{
+  "item.telepads.ender_bead": "Ender Bead",
+  "message.telepads.portable_disabled": "This Functionality has been disabled by the server operator.",
+  "message.telepads.destination_disabled": "This Telepad was powered off",
+  "message.telepads.dragon_blocked": "The power of the Ender Dragon is jamming your Telepad !",
+  "screen.telepads.forget": "Remove",
+  "message.telepads.insufficient_xp": "Your experience is too low to pay the teleport penalty",
+  "item.telepads.ender_bead_necklace": "Ender Bead Necklace",
+  "block.telepads.telepad": "Telepad",
+  "screen.telepads.confirm_missing": "Teleport Anyway",
+  "message.telepads.no_portable_destination": "The Pearl Bounces... no telepads are found nearby",
+  "item.telepads.creative_rod": "Location Cycler",
+  "screen.telepads.name": "Name Your Telepad ",
+  "item.telepads.transmitter": "Transmitter",
+  "item.telepads.toggler": "Toggler",
+  "item.telepads.creative_rod_public": "Public-O-Matic"
+}
